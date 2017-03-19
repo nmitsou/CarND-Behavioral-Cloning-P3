@@ -35,6 +35,7 @@ The image from the camera of the car is pre-processed in the following way:
 - downsample the image by skipping every second column
 
 | Input image | Cropped image |
+|---|---|
 | ![png](images/example_input.png) | ![png](images/example_cropped.png) | 
 
 
