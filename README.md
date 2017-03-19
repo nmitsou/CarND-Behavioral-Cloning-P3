@@ -11,7 +11,7 @@ The steps of this project are the following:
 - Test that the model successfully drives around track one without leaving the road
 - Summarize the results with a written report
 
-# Submitted files
+## Submitted files
 
 My project includes the following files:
 
@@ -20,7 +20,7 @@ My project includes the following files:
 - model.h5: contains a trained convolution neural network
 - writeup_report.md: summarizes the results
 
-# Model Architecture and Training Strategy
+## Model Architecture and Training Strategy
 
 I used the Comma.ai model since it has been successfully used on a similar problem. The only modification was the input image size.
 
@@ -38,18 +38,18 @@ To reduce overfitting, drop-out layers have been used. Also I have splitted the 
 
 The model used an adam optimizer, so the learning rate was not tuned manually.
 
-# Data collection
+## Data collection
 
 To train the network, I used the dataset provided by udacity. I used the center images together with the left and right camera image with added value on the angle +/- 0.25 rad. I collected additional data mostly on cases where the car failed to drive well autonomously (e.g. on turns). 
 
 
-## Data evaluation
+### Data evaluation
 
 By examining the udacity dataset, I notice that the dataset is unbalanced. There are a lot of cases of zero angles (shown below).
 
 ![png](images/histogram_original.png)
 
-## Data pre-processing
+### Data pre-processing
 
 To balance the dataset, I filter the original dataset in order to randomly remove zero angle instances. 
 The histogram of the **filtered** dataset is shown below: 
