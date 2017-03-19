@@ -3,18 +3,42 @@
 The current project provides a solution to the project 3 / Term 1 of the Self-driving car nano-degree by udacity.
 The goal of the project is to train a deep neural network to learn to predict the driving angle given an image from the car's camera.
 
-## Deep Network Model
+The steps of this project are the following:
+
+- Use the simulator to collect data of good driving behavior
+- Build, a convolution neural network in Keras that predicts steering angles from images
+- Train and validate the model with a training and validation set
+- Test that the model successfully drives around track one without leaving the road
+- Summarize the results with a written report
+
+# Submitted files
+
+My project includes the following files:
+
+- model.py: contains the script to create and train the model
+- drive.py: for driving the car in autonomous mode
+- model.h5: contains a trained convolution neural network
+- writeup_report.md: summarizes the results
+
+# Model Architecture and Training Strategy
 
 I used the Comma.ai model since it has been successfully used on a similar problem. The only modification was the input image size.
 
-In short the comma.ai deep learning model consists of a sequence of three convolution layers and ELUs. The output of this network is flattened and passed into a neural network with one hidden layer and drop-out and ELU layers between the input hidden and hidden output layers.
+In short the comma.ai deep learning model consists of a sequence of three convolution layers and RELUs. The output of this network is flattened and passed into a neural network with one hidden layer and drop-out and RELUs between the input hidden and hidden output layers.
 
 The architecture of the network is shown below:
 
 ![png](images/model.png)
 
+### Attempts to reduce overfitting in the model
 
-## Data collection
+To reduce overfitting, drop-out layers have been used. Also I have splitted the input dataset into training and testing set and the accuracy of the model has been evaluated on the testing set.
+
+### Model parameter tuning
+
+The model used an adam optimizer, so the learning rate was not tuned manually.
+
+# Data collection
 
 To train the network, I used the dataset provided by udacity. I used the center images together with the left and right camera image with added value on the angle +/- 0.25 rad. I collected additional data mostly on cases where the car failed to drive well autonomously (e.g. on turns). 
 
@@ -55,6 +79,3 @@ The original image is pre-processed in the following way:
 ## Training of the network
 
 ## Running the model on Track 1
-
-## Files
-
