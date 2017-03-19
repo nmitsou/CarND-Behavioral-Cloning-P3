@@ -3,10 +3,6 @@
 The current project provides a solution to the project 3 / Term 1 of the Self-driving car nano-degree by udacity.
 The goal of the project is to train a deep neural network to learn to predict the driving angle given an image from the car's camera.
 
-##### Table of Contents  
-[Headers](#headers)
-[Emphasis](#emphasis)
-
 ## Deep Network Model
 
 I used the Comma.ai model since it has been successfully used on a similar problem. The only modification was the input image size.
@@ -47,13 +43,18 @@ The histogram of the **self-collected** dataset is shown below
 
 ### Image pre-processing
 
-The image from the camera of the car is pre-processed in the following way:
+The original image is pre-processed in the following way:
 
-- crop the image ignoring the upper part (sky) and the lower part (car chasis) of the image
-- downsample the image by skipping every second column
+- crop the image ignoring the upper part (sky) and the lower part (car chasis) of the image from 160x320 to 78x320
+- downsample the image to 39x160
 
 | Input image | Cropped image |
 |---|---|
 | ![png](images/example_input.png) | ![png](images/example_cropped.png) | 
 
+## Training of the network
+
+## Running the model on Track 1
+
+## Files
 
