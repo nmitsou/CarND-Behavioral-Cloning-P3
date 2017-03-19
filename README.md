@@ -10,12 +10,14 @@ I used the Comma.ai model since it has been proven to work well on a similar pro
 In short the comma.ai deep learning model consists of a sequence of three convolution layers and ELUs. The output of this network is flattened and passed into a neural network with one hidden layer and drop-out and ELU layers between the input hidden and hidden output layers.
 
 The architecture of the network is shown below:
+
 ![png](images/model.png)
 
 
 ## Data collection
 
-To train the network, I used the dataset provided by udacity. I collected additional data mostly on cases where the car failed to drive autonomously (turns). 
+To train the network, I used the dataset provided by udacity. I collected additional data mostly on cases where the car failed to drive autonomously (e.g. on turns). 
+
 
 ## Data evaluation
 
@@ -24,3 +26,15 @@ By examining the udacity dataset, I notice that the dataset is unbalanced. There
 ## Data pre-processing
 
 To balance the dataset, I filter the original dataset in order to randomly remove zero.. Moreover, to balance the left and right turns, I vertically revert the images and add them with the opposite sign to the dataset. 
+
+### Image pre-processing
+
+The image from the camera of the car is pre-processed in the following way:
+
+- crop the image ignoring the upper part (sky) and the lower part (car chasis) of the image
+- downsample the image by skipping every second column
+
+| Input image | Cropped image |
+| ![png](images/example_input.png) | ![png](images/example_cropped.png) | 
+
+
