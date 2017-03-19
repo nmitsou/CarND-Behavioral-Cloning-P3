@@ -3,6 +3,10 @@
 The current project provides a solution to the project 3 / Term 1 of the Self-driving car nano-degree by udacity.
 The goal of the project is to train a deep neural network to learn to predict the driving angle given an image from the car's camera.
 
+##### Table of Contents  
+[Headers](#headers)
+[Emphasis](#emphasis)
+
 ## Deep Network Model
 
 I used the Comma.ai model since it has been successfully used on a similar problem. The only modification was the input image size.
