@@ -33,9 +33,13 @@ The histogram of the filtered dataset is shown below:
 ![png](images/histogram_filtered.png)
 
 Moreover, to balance the left and right turns, I vertically revert the images and add them with the opposite sign to the dataset. 
-The histogram of the final dataset is shown below: 
+The histogram of the final filtered udacity dataset is shown below: 
 
 ![png](images/histogram_left_right.png)
+
+The histogram of the self-collected dataset is shown below
+
+![png](images/histogram_self_collected.png)
 
 ### Image pre-processing
 
