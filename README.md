@@ -28,16 +28,16 @@ By examining the udacity dataset, I notice that the dataset is unbalanced. There
 ## Data pre-processing
 
 To balance the dataset, I filter the original dataset in order to randomly remove zero angle instances. 
-The histogram of the filtered dataset is shown below: 
+The histogram of the **filtered** dataset is shown below: 
 
 ![png](images/histogram_filtered.png)
 
 Moreover, to balance the left and right turns, I vertically revert the images and add them with the opposite sign to the dataset. 
-The histogram of the final filtered udacity dataset is shown below: 
+The histogram of the **final filtered** udacity dataset with **balanced left/right images** is shown below: 
 
 ![png](images/histogram_left_right.png)
 
-The histogram of the self-collected dataset is shown below
+The histogram of the **self-collected** dataset is shown below
 
 ![png](images/histogram_self_collected.png)
 
