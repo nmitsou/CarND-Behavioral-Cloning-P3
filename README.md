@@ -10,6 +10,7 @@ I used the Comma.ai model since it has been proven to work well on a similar pro
 In short the comma.ai deep learning model consists of a sequence of three convolution layers and ELUs. The output of this network is flattened and passed into a neural network with one hidden layer and drop-out and ELU layers between the input hidden and hidden output layers.
 
 The architecture of the network is shown below:
+![png](images/model.png)
 
 
 ## Data collection
