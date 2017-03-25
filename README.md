@@ -32,7 +32,7 @@ The architecture of the network is shown below:
 
 ### Attempts to reduce overfitting in the model
 
-To reduce overfitting, drop-out layers have been used. Also I have splitted the input dataset into training and testing set and the accuracy of the model has been evaluated on the testing set.
+To reduce overfitting, drop-out layers have been used. Also I have splitted the input dataset into training and validation set and the accuracy of the model has been evaluated on the validation set.
 
 ### Model parameter tuning
 
@@ -77,5 +77,11 @@ The original image is pre-processed in the following way:
 | ![png](images/example_input.png) | ![png](images/example_cropped.png) | 
 
 ## Training of the network
+
+I trained the network with different number of epochs and batch sizes.
+I finally selected 150 as batch size. 
+For epoch number, I draw the below graph and found that after 12 epochs the network started probably to overfit. So, I used 12 epochs.
+
+![png](images/mean_squared_error.png)
 
 ## Running the model on Track 1
