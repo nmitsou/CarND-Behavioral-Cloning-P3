@@ -85,3 +85,6 @@ For epoch number, I draw the below graph and found that after 12 epochs the netw
 ![png](images/mean_squared_error.png)
 
 ## Running the model on Track 1
+
+The car manages to drive on Track 1 without driving outside the road or touching any lane border. 
+You can find on this repo a small video and online more rounds here: https://youtu.be/duAp7eDKXAQ
