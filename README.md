@@ -78,8 +78,8 @@ The original image is pre-processed in the following way:
 
 ## Training of the network
 
-I trained the network with different number of epochs and batch sizes.
-I finally selected 150 as batch size. 
+I trained the network with 28863 training images and 1203 validation images.
+After experimenting, I selected 150 as batch size. 
 For epoch number, I draw the below graph and found that after 12 epochs the network started probably to overfit. So, I used 12 epochs.
 
 ![png](images/mean_squared_error.png)
